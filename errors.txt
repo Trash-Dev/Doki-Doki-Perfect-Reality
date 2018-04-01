@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script-example.rpy", line 3: play requires a channel
+    play "mod_assets/kys.ogg"
+         ^
+
+Ren'Py Version: Ren'Py 6.99.14.1.3218
+Sun Apr 01 16:32:54 2018

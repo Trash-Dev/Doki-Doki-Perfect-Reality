@@ -1,0 +1,36 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 32, in script call
+    call example_chapter
+  File "game/script-example.rpy", line 20, in script
+    n "You hear that [player?]"
+KeyError: u'player?'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 32, in script call
+    call example_chapter
+  File "game/script-example.rpy", line 20, in script
+    n "You hear that [player?]"
+  File "C:\Users\Ludde\Desktop\Renpy\renpy\ast.py", line 643, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "C:\Users\Ludde\Desktop\Renpy\renpy\exports.py", line 1176, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Ludde\Desktop\Renpy\renpy\character.py", line 1000, in __call__
+    what = what_pattern.replace("[what]", sub(what, translate=translate))
+  File "C:\Users\Ludde\Desktop\Renpy\renpy\character.py", line 982, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "C:\Users\Ludde\Desktop\Renpy\renpy\substitutions.py", line 242, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 605, in get_value
+KeyError: u'player?'
+
+Windows-8-6.2.9200
+Ren'Py 6.99.14.1.3218
+DDLC Mod Template 1.0.0
+Sun Apr 01 16:27:14 2018
